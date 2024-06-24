@@ -1,2 +1,6 @@
 # SRPM_GPM
-generalized prediction model for symbolic and perceptual reasoning
+Generalized prediction model for symbolic and perceptual reasoning
+
+Stimulus Dataset contained in images/
+
+
