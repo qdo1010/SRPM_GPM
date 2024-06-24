@@ -1,0 +1,51 @@
+================================================================================
+Task Timing
+================================================================================
+Inter-Trial Interval (Cross-Hair) : Random jitter of 0.5 - 3.5s in 0.5s intervals
+                                    (see "jitter" column for exact timing)
+Stimulus : 4s (Cue and answer choice images displayed all at once. Subject must
+           respond within these four seconds. Image remains displayed after 
+           subject response for the full 4s).
+Feedback : 1s (Display either "Correct" "Wrong" or "No Response")
+
+================================================================================
+Filename & Miscellaneous Notes
+================================================================================
+There were four task conditions:
+Texture Uniform (AKA Perceptual Matching) : tu
+Texture Rule (AKA Perceptual Reasoning)   : tr
+Symbol Uniform (AKA Symbolic Matching)    : su
+Symobl Reasoning (AKA Symbolic Reasoning) : sr
+
+Cue images follow the filename format    : CONDITION_NUMBER.png
+The correct answer choice has the format : CONDITION_NUMBERa.png
+Lures (incorrect answer choices) follow  : CONDITION_NUMBER[bcde].png
+
+Each cue stimulus was displayed four times: twice normally, and twice left/right
+flipped (reflected over the y-axis). Each lure (b,c,d,e) was presented once.
+Stimuli were counterbalanced across the entire scanning session. Jitter timing
+was determined using optseq2 to ensure that stimulus presentation was orthoganal
+across contiditons.
+
+================================================================================
+Header definitions for stim_presentation.txt
+================================================================================
+trial_num = Trial number. Participants completed 384 trials of the task divided 
+            across 6 runs. (64 trials per run) The 384 trials were divided into 
+            6 chunks of 64 trials each, preserving the order of the trials in
+            the stim_presentation.txt file. The 6 chunks were completed in a 
+            random order. (e.g. Subject 1 may have seen trials 1-64 first. 
+            Subject 2 may have seen trials 65-128 first, etc.)
+cue_img   = Name of png file displayed as the cue at the top of the screen
+condition = 1 : Texture Uniform (AKA Perceptual Matching)
+            2 : Texture Rule (AKA Pereceptual Reasoning)
+            3 : Symbol Uniform (AKA Symbolic Matching)
+            4 : Symbol Rule (AKA Symbolic Reasoning)
+flipped   = 0 : Images were presented normally
+            1 : Images were presented as left/right flipped (reflected over y-axis)
+choice_left = answer choice displayed on the left side of the screen
+choice_right = answer choice displayed on the right side of the screen
+corr_resp = 0 : Correct response is left image/left button press
+            1 : Correct response is right image/right button press
+jitter    = Amount of time that cross-hair (inter-trial interval) is displayed in
+            seconds
