@@ -1,5 +1,5 @@
 # SRPM_GPM
-This repo contains the official implementation for [A Feature-based Generalizable Prediction Model for Both Perceptual and Abstract Reasoning](https://arxiv.org/abs/2403.05641)
+This repo contains the official implementation of [A Feature-based Generalizable Prediction Model for Both Perceptual and Abstract Reasoning](https://arxiv.org/abs/2403.05641)
 
 The stimulus dataset is contained in images/ folder
 
