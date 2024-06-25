@@ -5,6 +5,7 @@ The stimulus dataset is contained in images/ folder
 
 Task descriptions can be found in notes.txt
 
+Demos for perceptual and symbolic reasoning are contained in 2 ipynb files
 # Dependencies
 To run the Demos for Perceptual and Symbolic Reasoning, use Jupyter Notebook with python3.
 
