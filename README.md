@@ -5,8 +5,9 @@ The stimulus dataset is contained in images/ folder
 
 Task descriptions can be found in notes.txt
 
-Demos for Perceptual and Symbolic Reasoning with jupyter notebook and python3
 # Dependencies
+To run the Demos for Perceptual and Symbolic Reasoning, use Jupyter Notebook with python3
+
 * opencv
 * numpy
 * scimage
